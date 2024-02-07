@@ -40,5 +40,10 @@ module RailsJwtDeviseAuthorization
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    # config.session_store :cookie_store
+
+    config.cache_store = :mem_cache_store # Using Dali gem
+    config.session_store :mem_cache_store # Replace :mem_cache_store with :redis_store if using Redis
   end
 end

@@ -45,3 +45,14 @@ group :development do
   # gem "spring"
 end
 
+gem "rack-cors"
+
+gem "devise"
+
+gem "devise-jwt"
+
+gem "fast_jsonapi"
+
+gem "dalli"
+
+gem "redis"
